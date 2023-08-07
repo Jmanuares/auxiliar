@@ -1,0 +1,1 @@
+filas = input(int("Ingrese el numero de filas"))

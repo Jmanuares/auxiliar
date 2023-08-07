@@ -20,12 +20,18 @@ def validarNumero(numero):
     if numero < 1:
         return True
     return False
+
 numero1 = int(input("Ingrese el primer numero: "))
-validarNumero(numero1)
+while(validarNumero(numero1)):
+    numero1 = int(input("Numero invalido un numero positivo: "))
+    
 numero2 = int(input("Ingrese el segundo numero: "))
-validarNumero(numero2)
+while(validarNumero(numero2)):
+    numero2 = int(input("Numero invalido un numero positivo: "))
+
 numero3 = int(input("Ingrese el tercer numero: "))
-validarNumero(numero3)
+while(validarNumero(numero3)):
+    numero3 = int(input("Numero invalido un numero positivo: "))
 
 mayor = comparar(numero1, numero2, numero3)
 if mayor == -1:
